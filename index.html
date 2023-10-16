@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live-Clock</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 50px;
+            background-color: azure;
+        }
+
+        .container div {
+            height: 100px;
+            width: 200px;
+            text-align: center;
+            padding-top: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background-color: ghostwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Time:<p id="clock"></p>
+        </div>
+        <div>Date:<p id="date"></p>
+        </div>
+        <div>Day: <p id="day"></p>
+        </div>
+    </div>
+
+    <script src="./clock.js"></script>
+</body>
+
+</html>
